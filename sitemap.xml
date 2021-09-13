@@ -2,7 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite-url/undefined/CV/</loc>
+    <loc>http://yoursite-url/Poem/Taken/</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/tags/index.html</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/CV/CV/</loc>
     
     <lastmod>2021-09-13</lastmod>
     
@@ -23,23 +37,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/index.html</loc>
-    
-    <lastmod>2021-09-12</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite-url/about/index.html</loc>
     
     <lastmod>2021-08-31</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite-url/en/Hexo-Theme-LiveMyLife/</loc>
-    
-    <lastmod>2020-04-16</lastmod>
     
   </url>
   
@@ -60,14 +60,14 @@
 
   
   <url>
-    <loc>http://yoursite-url/tags/Hexo-Theme-LiveMyLife/</loc>
+    <loc>http://yoursite-url/tags/CV/</loc>
     <lastmod>2021-09-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/CV/</loc>
+    <loc>http://yoursite-url/tags/Poem/</loc>
     <lastmod>2021-09-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -76,14 +76,14 @@
 
   
   <url>
-    <loc>http://yoursite-url/categories/Hexo-Theme-LiveMyLife/</loc>
+    <loc>http://yoursite-url/categories/CV/</loc>
     <lastmod>2021-09-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/categories/CV/</loc>
+    <loc>http://yoursite-url/categories/Poem/</loc>
     <lastmod>2021-09-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
