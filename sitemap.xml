@@ -2,56 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://missyr.github.io/hexo_personal-site/Poem/Taken/</loc>
+    <loc>http://missyr.github.io/404.html</loc>
     
     <lastmod>2021-09-13</lastmod>
     
   </url>
   
   <url>
-    <loc>http://missyr.github.io/hexo_personal-site/Poem/old/</loc>
+    <loc>http://missyr.github.io/categories/index.html</loc>
     
     <lastmod>2021-09-13</lastmod>
     
   </url>
   
   <url>
-    <loc>http://missyr.github.io/hexo_personal-site/tags/index.html</loc>
+    <loc>http://missyr.github.io/tags/index.html</loc>
     
     <lastmod>2021-09-13</lastmod>
     
   </url>
   
   <url>
-    <loc>http://missyr.github.io/hexo_personal-site/CV/CV/</loc>
+    <loc>http://missyr.github.io/Poem/Taken/</loc>
     
     <lastmod>2021-09-13</lastmod>
     
   </url>
   
   <url>
-    <loc>http://missyr.github.io/hexo_personal-site/404.html</loc>
+    <loc>http://missyr.github.io/Poem/old/</loc>
     
-    <lastmod>2021-09-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://missyr.github.io/hexo_personal-site/categories/index.html</loc>
-    
-    <lastmod>2021-09-12</lastmod>
+    <lastmod>2021-09-13</lastmod>
     
   </url>
   
   <url>
-    <loc>http://missyr.github.io/hexo_personal-site/about/index.html</loc>
+    <loc>http://missyr.github.io/CV/CV/</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://missyr.github.io/about/index.html</loc>
     
     <lastmod>2021-08-31</lastmod>
     
   </url>
   
   <url>
-    <loc>http://missyr.github.io/hexo_personal-site/archive/index.html</loc>
+    <loc>http://missyr.github.io/archive/index.html</loc>
     
     <lastmod>2017-03-20</lastmod>
     
@@ -59,7 +59,7 @@
   
 
   <url>
-    <loc>http://missyr.github.io/hexo_personal-site</loc>
+    <loc>http://missyr.github.io/</loc>
     <lastmod>2021-09-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -67,14 +67,14 @@
 
   
   <url>
-    <loc>http://missyr.github.io/hexo_personal-site/tags/CV/</loc>
+    <loc>http://missyr.github.io/tags/CV/</loc>
     <lastmod>2021-09-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://missyr.github.io/hexo_personal-site/tags/Poem/</loc>
+    <loc>http://missyr.github.io/tags/Poem/</loc>
     <lastmod>2021-09-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -83,14 +83,14 @@
 
   
   <url>
-    <loc>http://missyr.github.io/hexo_personal-site/categories/CV/</loc>
+    <loc>http://missyr.github.io/categories/CV/</loc>
     <lastmod>2021-09-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://missyr.github.io/hexo_personal-site/categories/Poem/</loc>
+    <loc>http://missyr.github.io/categories/Poem/</loc>
     <lastmod>2021-09-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
