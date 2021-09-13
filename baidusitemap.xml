@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://missyr.github.io/hexo_personal-site/HEXO_BLOG/Poem/Taken/</loc>
+    <loc>http://missyr.github.io/hexo_personal-site/Poem/Taken/</loc>
     <lastmod>2021-09-13</lastmod>
   </url>
   <url>
-    <loc>http://missyr.github.io/hexo_personal-site/HEXO_BLOG/Poem/old/</loc>
+    <loc>http://missyr.github.io/hexo_personal-site/Poem/old/</loc>
     <lastmod>2021-09-13</lastmod>
   </url>
   <url>
-    <loc>http://missyr.github.io/hexo_personal-site/HEXO_BLOG/CV/CV/</loc>
+    <loc>http://missyr.github.io/hexo_personal-site/CV/CV/</loc>
     <lastmod>2021-09-13</lastmod>
   </url>
 </urlset> 
