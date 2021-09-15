@@ -400,7 +400,7 @@
             </span>
             <div class="blank_box"></div>
             <span class="meta">
-              Words <span class="post-count">360</span> In Total
+              Words <span class="post-count">448</span> In Total
             </span>
             <div class="blank_box"></div>
             <!-- WordCount end -->
@@ -488,7 +488,28 @@ arrays: element</li>
 <li><strong>numbers</strong></li>
 </ul>
 <blockquote>
-<p>JavaScript does not make a distinction between integer values and floating-point values. All numbers in JavaScript are represented as 64-bit floating-point values.</p>
+<p>JavaScript does not make a distinction between integer values and floating-point values. All numbers in JavaScript are represented as 64-bit floating-point values.<br>
+Arithmetic in JavaScript</p>
+<ol>
+<li>JavaScript does not raise errors in cases of overflow, underflow, or divi- sion by zero.</li>
+</ol>
+<blockquote>
+<p>Overflow: infinity, negative infinity<br>
+Underflow: zero, negative zero<br>
+Division by zero: infinity or zero infinity</p>
+<blockquote>
+<p>zero divided by zero or divide infinity by infinity: NaN</p>
+</blockquote>
+</blockquote>
+<ol start="2">
+<li>The not-a-number value has one unusual feature in JavaScript: it does not compare equal to any other value, including itself.</li>
+</ol>
+<blockquote>
+<p>usage: x != x. It will be true if, and only if, x is NaN.</p>
+</blockquote>
+<ol start="3">
+<li>zero == negative zero, except when used as a divisor</li>
+</ol>
 </blockquote>
 <ul>
 <li><strong>strings</strong></li>
