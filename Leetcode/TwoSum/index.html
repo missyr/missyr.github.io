@@ -381,7 +381,9 @@
           <div class="post-heading">
             <div class="tags">
               
-              <a class="tag" href="/tags/#JavaScript; Leetcode" title="JavaScript; Leetcode">JavaScript; Leetcode</a>
+              <a class="tag" href="/tags/#JavaScript" title="JavaScript">JavaScript</a>
+              
+              <a class="tag" href="/tags/#Leetcode" title="Leetcode">Leetcode</a>
               
             </div>
             <h1>Two Sum</h1>
@@ -400,7 +402,7 @@
             </span>
             <div class="blank_box"></div>
             <span class="meta">
-              Words <span class="post-count">243</span> In Total
+              Words <span class="post-count">275</span> In Total
             </span>
             <div class="blank_box"></div>
             <!-- WordCount end -->
@@ -466,57 +468,18 @@
 <p>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.</p>
 <p>You may assume that each input would have exactly one solution, and you may not use the same element twice.</p>
 <p>You can return the answer in any order.</p>
-<h1>First Try:</h1>
-<p>‘’’ javascript<br>
-/**</p>
-<ul>
-<li>@param {number[]} nums</li>
-<li>@param {number} target</li>
-<li>@return {number[]}<br>
-*/<br>
-var twoSum = function(nums, target) {<br>
-var i=0;<br>
-var l = nums.length-1;<br>
-for(i;i&lt;=l;i++){<br>
-for(j=i+1;j&lt;=l;j++){<br>
-if (nums[i]+nums[j] == target){<br>
-return [i,j]<br>
-}<br>
-}<br>
-}</li>
-</ul>
-<p>};<br>
-‘’’<br>
-Runtime: 112 ms, faster than 45.07% of JavaScript online submissions for Two Sum.<br>
+<h2 id="First-Try">First Try:</h2>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number[]&#125;</span> <span class="variable">nums</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number&#125;</span> <span class="variable">target</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;number[]&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span>(<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> i=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">var</span> l = nums.length-<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(i;i&lt;=l;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(j=i+<span class="number">1</span>;j&lt;=l;j++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i]+nums[j] == target)&#123;</span><br><span class="line">                <span class="keyword">return</span> [i,j]</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>Runtime: 112 ms, faster than 45.07% of JavaScript online submissions for Two Sum.<br>
 Memory Usage: 39.5 MB, less than 73.12% of JavaScript online submissions for Two Sum.</p>
-<h2 id="feedback">feedback</h2>
+<h2 id="Feedback-and-improve">Feedback and improve</h2>
 <p>do not use var in a function(), use let.<br>
 Time complexity：o(n2); space complexity:o(1)<br>
 we can use map to reduce time complexity, by sacrificing space.<br>
 map{[kay:value],[key:value],[key:value],…}<br>
 map[key]=value</p>
-<p>‘’’ javascript<br>
-/**</p>
-<ul>
-<li>@param {number[]} nums</li>
-<li>@param {number} target</li>
-<li>@return {number[]}<br>
-*/<br>
-var twoSum = function(nums, target) {<br>
-let map = {}<br>
-for(i=0; i&lt; nums.length; i++){<br>
-let value = nums[i]<br>
-let pairvalue = target-nums[i]<br>
-if(map[pairvalue] !== undefined){<br>
-return[map[pairvalue],i]<br>
-}else{<br>
-map[value]=i<br>
-}<br>
-}</li>
-</ul>
-<p>};</p>
-<p>‘’’<br>
-Runtime: 64 ms, faster than 99.36% of JavaScript online submissions for Two Sum.<br>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number[]&#125;</span> <span class="variable">nums</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number&#125;</span> <span class="variable">target</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;number[]&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span>(<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> map = &#123;&#125;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>; i&lt; nums.length; i++)&#123;</span><br><span class="line">        <span class="keyword">let</span> value = nums[i]</span><br><span class="line">        <span class="keyword">let</span> pairvalue = target-nums[i]</span><br><span class="line">        <span class="keyword">if</span>(map[pairvalue] !== <span class="literal">undefined</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span>[map[pairvalue],i]</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            map[value]=i</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>Runtime: 64 ms, faster than 99.36% of JavaScript online submissions for Two Sum.<br>
 Memory Usage: 40 MB, less than 55.97% of JavaScript online submissions for Two Sum.</p>
 
 
@@ -667,7 +630,7 @@ Memory Usage: 40 MB, less than 55.97% of JavaScript online submissions for Two S
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Two Sum</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">First Try:</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#feedback"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">feedback</span></a></li></ol></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Two Sum</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#First-Try"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">First Try:</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Feedback-and-improve"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">Feedback and improve</span></a></li></ol></li></ol>
         
         </div>
       </aside>
@@ -690,7 +653,9 @@ Memory Usage: 40 MB, less than 55.97% of JavaScript online submissions for Two S
           </h5>
           <div class="tags">
             
-            <a class="tag" href="/tags/#JavaScript; Leetcode" title="JavaScript; Leetcode">JavaScript; Leetcode</a>
+            <a class="tag" href="/tags/#JavaScript" title="JavaScript">JavaScript</a>
+            
+            <a class="tag" href="/tags/#Leetcode" title="Leetcode">Leetcode</a>
             
           </div>
         </section>
