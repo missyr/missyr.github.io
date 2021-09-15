@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://missyr.github.io/JavaScript/Guide_Chap1-3/</loc>
+    
+    <lastmod>2021-09-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://missyr.github.io/Leetcode/TwoSum/</loc>
+    
+    <lastmod>2021-09-15</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://missyr.github.io/404.html</loc>
     
     <lastmod>2021-09-13</lastmod>
@@ -17,13 +31,6 @@
   
   <url>
     <loc>http://missyr.github.io/tags/index.html</loc>
-    
-    <lastmod>2021-09-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://missyr.github.io/JavaScript/Guide_Chap1-3/</loc>
     
     <lastmod>2021-09-13</lastmod>
     
@@ -95,6 +102,13 @@
   </url>
   
   <url>
+    <loc>http://missyr.github.io/tags/JavaScript-Leetcode/</loc>
+    <lastmod>2021-09-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://missyr.github.io/tags/Poem/</loc>
     <lastmod>2021-09-15</lastmod>
     <changefreq>daily</changefreq>
@@ -112,6 +126,13 @@
   
   <url>
     <loc>http://missyr.github.io/categories/JavaScript/</loc>
+    <lastmod>2021-09-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://missyr.github.io/categories/Leetcode/</loc>
     <lastmod>2021-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
