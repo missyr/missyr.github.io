@@ -481,72 +481,48 @@ arrays: element</li>
 </ol>
 </blockquote>
 <h1>Chapter 3–Types, Values, and Variables</h1>
-<ul>
-<li>
-<p>primitive types (原始数据类型)</p>
-<ul>
-<li><strong>numbers</strong></li>
-</ul>
+<h2 id="primitive-types-原始数据类型">primitive types (原始数据类型)</h2>
+<h3 id="numbers"><em>numbers</em></h3>
 <blockquote>
-<p>JavaScript does not make a distinction between integer values and floating-point values. All numbers in JavaScript are represented as 64-bit floating-point values.<br>
-Arithmetic in JavaScript</p>
 <ol>
-<li>JavaScript does not raise errors in cases of overflow, underflow, or divi- sion by zero.</li>
-</ol>
-<blockquote>
-<p>Overflow: infinity, negative infinity<br>
-Underflow: zero, negative zero<br>
-Division by zero: infinity or zero infinity</p>
-<blockquote>
-<p>zero divided by zero or divide infinity by infinity: NaN</p>
-</blockquote>
-</blockquote>
-<ol start="2">
-<li>The not-a-number value has one unusual feature in JavaScript: it does not compare equal to any other value, including itself.</li>
-</ol>
-<blockquote>
-<p>usage: x != x. It will be true if, and only if, x is NaN.</p>
-</blockquote>
-<ol start="3">
+<li>JavaScript does not make a distinction between integer values and floating-point values. All numbers in JavaScript are represented as 64-bit floating-point values.</li>
+<li>Arithmetic in JavaScript<br>
+JavaScript does not raise errors in cases of overflow, underflow, or divi- sion by zero.<br>
+- Overflow: infinity, negative infinity<br>
+- Underflow: zero, negative zero<br>
+- Division by zero: infinity or zero infinity<br>
+- zero divided by zero or divide infinity by infinity: NaN</li>
+<li>The not-a-number value has one unusual feature in JavaScript: it does not compare equal to any other value, including itself.<br>
+usage: x != x. It will be true if, and only if, x is NaN.</li>
 <li>zero == negative zero, except when used as a divisor</li>
 </ol>
 </blockquote>
-<ul>
-<li><strong>strings</strong></li>
-<li><strong>booleans</strong></li>
-</ul>
+<h3 id="strings"><em>strings</em></h3>
+<h3 id="booleans"><em>booleans</em></h3>
 <blockquote>
-<p>Boolean values are generally the result of comparisons you make in your JavaScript programs.<br>
-Boolean values are commonly used in JavaScript control structures.<br>
-any JavaScript value can be converted to a boolean value. undefined; null; 0; -0; NaN; “”; convert to, and therefore work like, false. All other values, including all objects (and arrays) convert to, and work like, true.<br>
-Boolean values have a toString() method that you can use to convert them to the strings “true” or “false”.<br>
-there are three boolean operators:</p>
+<ol>
+<li>Boolean values are generally the result of comparisons you make in your JavaScript programs.</li>
+<li>Boolean values are commonly used in JavaScript control structures.</li>
+<li>any JavaScript value can be converted to a boolean value. undefined; null; 0; -0; NaN; “”; convert to, and therefore work like, false. All other values, including all objects (and arrays) convert to, and work like, true.</li>
+<li>Boolean values have a toString() method that you can use to convert them to the strings “true” or “false”.</li>
+<li>there are three boolean operators:<br>
+- <em>AND:&amp;&amp;</em><br>
+- <em>OR:||</em><br>
+- <em>NOT:!</em></li>
+</ol>
 </blockquote>
-<ul>
-<li><em>AND:&amp;&amp;</em></li>
-<li><em>OR:||</em></li>
-<li><em>NOT:!</em></li>
-<li><strong>null</strong></li>
-<li><strong>undefined</strong></li>
-</ul>
-</li>
-<li>
-<p>object types (对象数据类型)</p>
-</li>
-</ul>
+<h3 id="null"><em>null</em></h3>
+<h3 id="undefined"><em>undefined</em></h3>
+<h2 id="object-types-对象数据类型">object types (对象数据类型)</h2>
 <blockquote>
 <p>Any JavaScript value that is not a number, a string, a boolean, or null or undefined is an object.<br>
 An object is a collection of properties where each property has a name and a value</p>
 </blockquote>
-<ul>
-<li><strong>arrays</strong></li>
-</ul>
+<h3 id="arrays"><em>arrays</em></h3>
 <blockquote>
 <p>special kind of object, that represents an ordered collection of numbered values.</p>
 </blockquote>
-<ul>
-<li><strong>function</strong></li>
-</ul>
+<h3 id="function"><em>function</em></h3>
 <blockquote>
 <p>automatic garbage collection</p>
 </blockquote>
@@ -695,7 +671,7 @@ An object is a collection of properties where each property has a name and a val
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Chapter 1-2</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">Chapter 3–Types, Values, and Variables</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Chapter 1-2</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">Chapter 3–Types, Values, and Variables</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#primitive-types-%E5%8E%9F%E5%A7%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">primitive types (原始数据类型)</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#numbers"><span class="toc-nav-number">2.1.1.</span> <span class="toc-nav-text">numbers</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#strings"><span class="toc-nav-number">2.1.2.</span> <span class="toc-nav-text">strings</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#booleans"><span class="toc-nav-number">2.1.3.</span> <span class="toc-nav-text">booleans</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.1.4.</span> <span class="toc-nav-text">null</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.1.5.</span> <span class="toc-nav-text">undefined</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#object-types-%E5%AF%B9%E8%B1%A1%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">object types (对象数据类型)</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#arrays"><span class="toc-nav-number">2.2.1.</span> <span class="toc-nav-text">arrays</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#function"><span class="toc-nav-number">2.2.2.</span> <span class="toc-nav-text">function</span></a></li></ol></li></ol></li></ol>
         
         </div>
       </aside>
