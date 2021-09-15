@@ -254,9 +254,9 @@
           
           
           <li>
-            <a href="/categories/">
+            <a href="/archive/">
               
-              CATEGORIES
+              ARCHIVES
               
               
             </a>
@@ -265,9 +265,9 @@
           
           
           <li>
-            <a href="/archive/">
+            <a href="/categories/">
               
-              ARCHIVES
+              CATEGORIES
               
               
             </a>
@@ -385,7 +385,7 @@
               
             </div>
             <h1>JavaScript The Definitive Guide_Chap1~3</h1>
-            <h2 class="subheading">Study notes for JavaScipt</h2>
+            <h2 class="subheading">Study notes for JavaScript</h2>
             <span class="meta">
               Posted by Rui on
               13-09-2021
@@ -464,50 +464,70 @@
 
         <h1>Chapter 1-2</h1>
 <blockquote>
-<p>html determine content. css determine presentation, js determine behavior<br>
-curly brace; square brace; Semicolons<br>
-object: properties-&gt;value<br>
-arrays: element<br>
-赋值：assignment<br>
+<ol>
+<li>html determine content. css determine presentation, js determine behavior</li>
+<li>curly brace; square brace; Semicolons</li>
+<li>object: properties-&gt;value<br>
+arrays: element</li>
+<li>赋值：assignment<br>
 调用：invoke<br>
 继承： inherits<br>
-变量名：identifier<br>
-&amp;&amp; is AND; || is OR<br>
-JavaScript is a case-sensitive language.<br>
-Roughly, an expression is something that computes a value but doesn’t do anything: it doesn’t alter the program state in any way. Statements, on the other hand, don’t have a value (or don’t have a value that we care about), but they do alter the state.<br>
-In JavaScript, you can usually omit the semicolon between two statements if those statements are written on separate lines.general rule that JavaScript interprets line breaks as semicolons when it cannot parse the second line as a continuation of the statement on the first line.<br>
-object-oriented language: rather than having globally defined functions to operate on values of various types, the types themselves define methods for working with values.</p>
+变量名：identifier</li>
+<li>&amp;&amp; is AND; || is OR</li>
+<li>JavaScript is a case-sensitive language.</li>
+<li>Roughly, an expression is something that computes a value but doesn’t do anything: it doesn’t alter the program state in any way. Statements, on the other hand, don’t have a value (or don’t have a value that we care about), but they do alter the state.</li>
+<li>In JavaScript, you can usually omit the semicolon between two statements if those statements are written on separate lines.general rule that JavaScript interprets line breaks as semicolons when it cannot parse the second line as a continuation of the statement on the first line.</li>
+<li>object-oriented language: rather than having globally defined functions to operate on values of various types, the types themselves define methods for working with values.</li>
+</ol>
 </blockquote>
 <h1>Chapter 3–Types, Values, and Variables</h1>
 <ul>
-<li>primitive types (原始数据类型)</li>
+<li>
+<p>primitive types (原始数据类型)</p>
+<ul>
+<li><strong>numbers</strong></li>
 </ul>
 <blockquote>
-<p><strong>numbers</strong><br>
-JavaScript does not make a distinction between integer values and floating-point values. All numbers in JavaScript are represented as 64-bit floating-point values.<br>
-<strong>strings</strong><br>
-<strong>booleans</strong><br>
-Boolean values are generally the result of comparisons you make in your JavaScript programs.<br>
+<p>JavaScript does not make a distinction between integer values and floating-point values. All numbers in JavaScript are represented as 64-bit floating-point values.</p>
+</blockquote>
+<ul>
+<li><strong>strings</strong></li>
+<li><strong>booleans</strong></li>
+</ul>
+<blockquote>
+<p>Boolean values are generally the result of comparisons you make in your JavaScript programs.<br>
 Boolean values are commonly used in JavaScript control structures.<br>
 any JavaScript value can be converted to a boolean value. undefined; null; 0; -0; NaN; “”; convert to, and therefore work like, false. All other values, including all objects (and arrays) convert to, and work like, true.<br>
 Boolean values have a toString() method that you can use to convert them to the strings “true” or “false”.<br>
-there are three boolean operators:<br>
-<em>AND:&amp;&amp;</em><br>
-<em>OR:||</em><br>
-<em>NOT:!</em><br>
-<strong>null</strong><br>
-<strong>undefined</strong></p>
+there are three boolean operators:</p>
 </blockquote>
 <ul>
-<li>object types (对象数据类型)</li>
+<li><em>AND:&amp;&amp;</em></li>
+<li><em>OR:||</em></li>
+<li><em>NOT:!</em></li>
+<li><strong>null</strong></li>
+<li><strong>undefined</strong></li>
+</ul>
+</li>
+<li>
+<p>object types (对象数据类型)</p>
+</li>
 </ul>
 <blockquote>
 <p>Any JavaScript value that is not a number, a string, a boolean, or null or undefined is an object.<br>
 An object is a collection of properties where each property has a name and a value</p>
-<p><strong>arrays</strong><br>
-special kind of object, that represents an ordered collection of numbered values.<br>
-<strong>function</strong><br>
-automatic garbage collection</p>
+</blockquote>
+<ul>
+<li><strong>arrays</strong></li>
+</ul>
+<blockquote>
+<p>special kind of object, that represents an ordered collection of numbered values.</p>
+</blockquote>
+<ul>
+<li><strong>function</strong></li>
+</ul>
+<blockquote>
+<p>automatic garbage collection</p>
 </blockquote>
 
 
