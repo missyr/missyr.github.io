@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://missyr.github.io/JavaScript/Guide_Chap1-3/</loc>
-    <lastmod>2021-09-15</lastmod>
+    <loc>http://missyr.github.io/Leetcode/Palindrome%20Number/</loc>
+    <lastmod>2021-09-16</lastmod>
   </url>
   <url>
     <loc>http://missyr.github.io/Leetcode/Reverse%20Integer/</loc>
@@ -10,6 +10,10 @@
   </url>
   <url>
     <loc>http://missyr.github.io/Leetcode/TwoSum/</loc>
+    <lastmod>2021-09-15</lastmod>
+  </url>
+  <url>
+    <loc>http://missyr.github.io/JavaScript/Guide_Chap1-3/</loc>
     <lastmod>2021-09-15</lastmod>
   </url>
   <url>
