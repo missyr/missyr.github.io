@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://missyr.github.io/JavaScript/useOfFlag/</loc>
+    
+    <lastmod>2021-11-11</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://missyr.github.io/Leetcode/SearchInsertPosition/</loc>
     
     <lastmod>2021-10-11</lastmod>
@@ -109,7 +116,7 @@
 
   <url>
     <loc>http://missyr.github.io/</loc>
-    <lastmod>2021-10-11</lastmod>
+    <lastmod>2021-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -117,28 +124,28 @@
   
   <url>
     <loc>http://missyr.github.io/tags/CV/</loc>
-    <lastmod>2021-10-11</lastmod>
+    <lastmod>2021-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://missyr.github.io/tags/JavaScript/</loc>
-    <lastmod>2021-10-11</lastmod>
+    <lastmod>2021-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://missyr.github.io/tags/Leetcode/</loc>
-    <lastmod>2021-10-11</lastmod>
+    <lastmod>2021-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://missyr.github.io/tags/Poem/</loc>
-    <lastmod>2021-10-11</lastmod>
+    <lastmod>2021-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -147,28 +154,28 @@
   
   <url>
     <loc>http://missyr.github.io/categories/CV/</loc>
-    <lastmod>2021-10-11</lastmod>
+    <lastmod>2021-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://missyr.github.io/categories/JavaScript/</loc>
-    <lastmod>2021-10-11</lastmod>
+    <lastmod>2021-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://missyr.github.io/categories/Leetcode/</loc>
-    <lastmod>2021-10-11</lastmod>
+    <lastmod>2021-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://missyr.github.io/categories/Poem/</loc>
-    <lastmod>2021-10-11</lastmod>
+    <lastmod>2021-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
