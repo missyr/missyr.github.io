@@ -243,17 +243,6 @@
           
           
           <li>
-            <a href="/about/">
-              
-              ABOUT
-              
-              
-            </a>
-          </li>
-          
-          
-          
-          <li>
             <a href="/archive/">
               
               ARCHIVES
@@ -268,6 +257,15 @@
             <a href="/categories/">
               
               CATEGORIES
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/about/">
               
               
             </a>
@@ -400,7 +398,7 @@
             </span>
             <div class="blank_box"></div>
             <span class="meta">
-              Words <span class="post-count">578</span> In Total
+              Words <span class="post-count">570</span> In Total
             </span>
             <div class="blank_box"></div>
             <!-- WordCount end -->
@@ -462,78 +460,51 @@
       <!-- Post Container -->
       <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-        <h1>Chapter 1-2</h1>
-<blockquote>
+        <h1 id="Chapter-1-2"><a href="#Chapter-1-2" class="headerlink" title="Chapter 1-2"></a>Chapter 1-2</h1><blockquote>
 <ol>
 <li>html determine content. css determine presentation, js determine behavior</li>
 <li>curly brace; square brace; Semicolons</li>
-<li>object: properties-&gt;value<br>
-arrays: element</li>
-<li>赋值：assignment<br>
-调用：invoke<br>
-继承： inherits<br>
-变量名：identifier</li>
+<li>object: properties-&gt;value<br>arrays: element</li>
+<li>赋值：assignment<br>调用：invoke<br>继承： inherits<br>变量名：identifier</li>
 <li>&amp;&amp; is AND; || is OR</li>
 <li>JavaScript is a case-sensitive language.</li>
 <li>Roughly, an expression is something that computes a value but doesn’t do anything: it doesn’t alter the program state in any way. Statements, on the other hand, don’t have a value (or don’t have a value that we care about), but they do alter the state.</li>
 <li>In JavaScript, you can usually omit the semicolon between two statements if those statements are written on separate lines.general rule that JavaScript interprets line breaks as semicolons when it cannot parse the second line as a continuation of the statement on the first line.</li>
-<li>object-oriented language: rather than having globally defined functions to operate on values of various types, the types themselves define methods for working with values.</li>
+<li>object-oriented language: rather than having globally defined functions to operate on values of various types, the types themselves define methods for working with values. </li>
 </ol>
 </blockquote>
-<h1>Chapter 3–Types, Values, and Variables</h1>
-<h2 id="primitive-types-原始数据类型">primitive types (原始数据类型)</h2>
-<h3 id="numbers"><em>numbers</em></h3>
-<blockquote>
+<h1 id="Chapter-3—Types-Values-and-Variables"><a href="#Chapter-3—Types-Values-and-Variables" class="headerlink" title="Chapter 3—Types, Values, and Variables"></a>Chapter 3—Types, Values, and Variables</h1><h2 id="primitive-types-原始数据类型"><a href="#primitive-types-原始数据类型" class="headerlink" title="primitive types (原始数据类型)"></a>primitive types (原始数据类型)</h2><h3 id="numbers"><a href="#numbers" class="headerlink" title="numbers"></a><em>numbers</em></h3><blockquote>
 <ol>
-<li>JavaScript does not make a distinction between integer values and floating-point values. All numbers in JavaScript are represented as 64-bit floating-point values.</li>
-<li>Arithmetic in JavaScript<br>
-JavaScript does not raise errors in cases of overflow, underflow, or divi- sion by zero.<br>
-- Overflow: infinity, negative infinity<br>
-- Underflow: zero, negative zero<br>
-- Division by zero: infinity or zero infinity<br>
-- zero divided by zero or divide infinity by infinity: NaN</li>
-<li>The not-a-number value has one unusual feature in JavaScript: it does not compare equal to any other value, including itself.<br>
-usage: x != x. It will be true if, and only if, x is NaN.</li>
+<li>JavaScript does not make a distinction between integer values and floating-point values. All numbers in JavaScript are represented as 64-bit floating-point values. </li>
+<li>Arithmetic in JavaScript<br> JavaScript does not raise errors in cases of overflow, underflow, or divi- sion by zero.<ul>
+<li>Overflow: infinity, negative infinity</li>
+<li>Underflow: zero, negative zero</li>
+<li>Division by zero: infinity or zero infinity</li>
+<li>zero divided by zero or divide infinity by infinity: NaN</li>
+</ul>
+</li>
+<li>The not-a-number value has one unusual feature in JavaScript: it does not compare equal to any other value, including itself.<br> usage: x != x. It will be true if, and only if, x is NaN. </li>
 <li>zero == negative zero, except when used as a divisor</li>
 </ol>
 </blockquote>
-<h3 id="strings"><em>strings</em></h3>
-<h3 id="booleans"><em>booleans</em></h3>
-<blockquote>
+<h3 id="strings"><a href="#strings" class="headerlink" title="strings"></a><em>strings</em></h3><h3 id="booleans"><a href="#booleans" class="headerlink" title="booleans"></a><em>booleans</em></h3><blockquote>
 <ol>
 <li>Boolean values are generally the result of comparisons you make in your JavaScript programs.</li>
 <li>Boolean values are commonly used in JavaScript control structures.</li>
 <li>any JavaScript value can be converted to a boolean value. undefined; null; 0; -0; NaN; “”; convert to, and therefore work like, false. All other values, including all objects (and arrays) convert to, and work like, true.</li>
 <li>Boolean values have a toString() method that you can use to convert them to the strings “true” or “false”.</li>
-<li>there are three boolean operators:<br>
-- <em>AND:&amp;&amp;</em><br>
-- <em>OR:||</em><br>
-- <em>NOT:!</em></li>
+<li>there are three boolean operators:<ul>
+<li><em>AND:&amp;&amp;</em></li>
+<li><em>OR:||</em></li>
+<li><em>NOT:!</em><h3 id="null"><a href="#null" class="headerlink" title="null"></a><em>null</em></h3>Using the typeof operator on null returns the string “object”, indicating that null can be thought of as a special object value that indicates “no object”.<br>In practice,it can be used to indicate “no value” for numbers and strings as well as objects.<h3 id="undefined"><a href="#undefined" class="headerlink" title="undefined"></a><em>undefined</em></h3>typeof operator to the undefined value, it returns “undefined”, indicating that this value is the sole member of a special type, it represents a deeper kind of absence.<br>It is the value of variables that have not been initialized and the value you get when you query the value of an object property or array element that does not exist. The undefined value is also returned by functions that have no return value, and the value of function parameters for which no argument is supplied. </li>
+</ul>
+</li>
 </ol>
 </blockquote>
-<h3 id="null"><em>null</em></h3>
-<blockquote>
-<p>Using the typeof operator on null returns the string “object”, indicating that null can be thought of as a special object value that indicates “no object”.<br>
-In practice,it can be used to indicate “no value” for numbers and strings as well as objects.</p>
-</blockquote>
-<h3 id="undefined"><em>undefined</em></h3>
-<blockquote>
-<p>typeof operator to the undefined value, it returns “undefined”, indicating that this value is the sole member of a special type, it represents a deeper kind of absence.<br>
-It is the value of variables that have not been initialized and the value you get when you query the value of an object property or array element that does not exist. The undefined value is also returned by functions that have no return value, and the value of function parameters for which no argument is supplied.</p>
-</blockquote>
-<h2 id="object-types-对象数据类型">object types (对象数据类型)</h2>
-<blockquote>
-<p>Any JavaScript value that is not a number, a string, a boolean, or null or undefined is an object.<br>
-An object is a collection of properties where each property has a name and a value</p>
-</blockquote>
-<h3 id="objects"><em>objects</em></h3>
-<h3 id="arrays"><em>arrays</em></h3>
-<blockquote>
-<p>special kind of object, that represents an ordered collection of numbered values.</p>
-</blockquote>
-<h3 id="function"><em>function</em></h3>
-<blockquote>
-<p>automatic garbage collection</p>
+<h2 id="object-types-对象数据类型"><a href="#object-types-对象数据类型" class="headerlink" title="object types (对象数据类型)"></a>object types (对象数据类型)</h2><blockquote>
+<p>Any JavaScript value that is not a number, a string, a boolean, or null or undefined is an object.<br>An object is a collection of properties where each property has a name and a value</p>
+<h3 id="objects"><a href="#objects" class="headerlink" title="objects"></a><em>objects</em></h3><h3 id="arrays"><a href="#arrays" class="headerlink" title="arrays"></a><em>arrays</em></h3><p>special kind of object, that represents an ordered collection of numbered values.</p>
+<h3 id="function"><a href="#function" class="headerlink" title="function"></a><em>function</em></h3><p>automatic garbage collection</p>
 </blockquote>
 
 
@@ -542,9 +513,13 @@ An object is a collection of properties where each property has a name and a val
         <ul class="pager">
           
           <li class="previous">
-            <a href="/Leetcode/TwoSum/" data-toggle="tooltip" data-placement="top" title="Two Sum">&larr; Previous Post</a>
+            <a href="/Leetcode/Palindrome Number/" data-toggle="tooltip" data-placement="top" title="Palindrome Number">&larr; Previous Post</a>
           </li>
           
+          
+          <li class="next">
+            <a href="/Leetcode/Reverse Integer/" data-toggle="tooltip" data-placement="top" title="Reverse Interger">Next Post &rarr;</a>
+          </li>
           
         </ul>
 
@@ -680,7 +655,7 @@ An object is a collection of properties where each property has a name and a val
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Chapter 1-2</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">Chapter 3–Types, Values, and Variables</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#primitive-types-%E5%8E%9F%E5%A7%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">primitive types (原始数据类型)</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#numbers"><span class="toc-nav-number">2.1.1.</span> <span class="toc-nav-text">numbers</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#strings"><span class="toc-nav-number">2.1.2.</span> <span class="toc-nav-text">strings</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#booleans"><span class="toc-nav-number">2.1.3.</span> <span class="toc-nav-text">booleans</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.1.4.</span> <span class="toc-nav-text">null</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.1.5.</span> <span class="toc-nav-text">undefined</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#object-types-%E5%AF%B9%E8%B1%A1%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">object types (对象数据类型)</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#objects"><span class="toc-nav-number">2.2.1.</span> <span class="toc-nav-text">objects</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#arrays"><span class="toc-nav-number">2.2.2.</span> <span class="toc-nav-text">arrays</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#function"><span class="toc-nav-number">2.2.3.</span> <span class="toc-nav-text">function</span></a></li></ol></li></ol></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Chapter-1-2"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Chapter 1-2</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Chapter-3%E2%80%94Types-Values-and-Variables"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">Chapter 3—Types, Values, and Variables</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#primitive-types-%E5%8E%9F%E5%A7%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">primitive types (原始数据类型)</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#numbers"><span class="toc-nav-number">2.1.1.</span> <span class="toc-nav-text">numbers</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#strings"><span class="toc-nav-number">2.1.2.</span> <span class="toc-nav-text">strings</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#booleans"><span class="toc-nav-number">2.1.3.</span> <span class="toc-nav-text">booleans</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.1.4.</span> <span class="toc-nav-text">null</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.1.5.</span> <span class="toc-nav-text">undefined</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#object-types-%E5%AF%B9%E8%B1%A1%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">object types (对象数据类型)</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#objects"><span class="toc-nav-number">2.2.1.</span> <span class="toc-nav-text">objects</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#arrays"><span class="toc-nav-number">2.2.2.</span> <span class="toc-nav-text">arrays</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#function"><span class="toc-nav-number">2.2.3.</span> <span class="toc-nav-text">function</span></a></li></ol></li></ol></li></ol>
         
         </div>
       </aside>
