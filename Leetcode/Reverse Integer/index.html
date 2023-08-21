@@ -252,17 +252,6 @@
           
           
           <li>
-            <a href="/tags/">
-              
-              TAGS
-              
-              
-            </a>
-          </li>
-          
-          
-          
-          <li>
             <a href="/archive/">
               
               ARCHIVES
@@ -277,6 +266,17 @@
             <a href="/categories/">
               
               CATEGORIES
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/tags/">
+              
+              TAGS
               
               
             </a>
@@ -400,7 +400,7 @@
             </span>
             <div class="blank_box"></div>
             <span class="meta">
-              Words <span class="post-count">176</span> In Total
+              Words <span class="post-count">184</span> In Total
             </span>
             <div class="blank_box"></div>
             <!-- WordCount end -->
@@ -462,11 +462,24 @@
       <!-- Post Container -->
       <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-        <h1 id="Reverse-Interger"><a href="#Reverse-Interger" class="headerlink" title="Reverse Interger"></a>Reverse Interger</h1><p>Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.<br>Example 1:<br>Input: x = 123<br>Output: 321</p>
-<h2 id="First-try"><a href="#First-try" class="headerlink" title="First try"></a>First try</h2><p>x % 10<br>didn’t have a solution</p>
-<h2 id="Refer-to-others’-solution"><a href="#Refer-to-others’-solution" class="headerlink" title="Refer to others’ solution"></a>Refer to others’ solution</h2><p>we can use number.toString()<br>array.split(“”)<br>array.reverse()<br>array.join(“”)</p>
-<p>Math.pow(2,n) represents 2<sup><a href="#fn_n" id="reffn_n">n</a></sup><br>Math.abs()return absolute value<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number&#125;</span> <span class="variable">x</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;number&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> reverse = <span class="function"><span class="keyword">function</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> isNegtive = x&lt;<span class="number">0</span></span><br><span class="line">    <span class="keyword">const</span> strArray = <span class="built_in">Math</span>.abs(x).toString().split(<span class="string">&quot;&quot;</span>)</span><br><span class="line">    <span class="keyword">const</span> num = strArray.reverse().join(<span class="string">&quot;&quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> ((isNegtive &amp;&amp; (num&gt;<span class="built_in">Math</span>.pow(<span class="number">2</span>,<span class="number">31</span>))) || (!isNegtive &amp;&amp; (num&gt;<span class="built_in">Math</span>.pow(<span class="number">2</span>,<span class="number">31</span>)-<span class="number">1</span>)))&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(isNegtive)&#123;</span><br><span class="line">            <span class="keyword">return</span> -num;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">return</span> num;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
-<p>Runtime: 88 ms, faster than 74.47% of JavaScript online submissions for Reverse Integer.<br>Memory Usage: 40.3 MB, less than 70.81% of JavaScript online submissions for Reverse Integer.</p>
+        <h1>Reverse Interger</h1>
+<p>Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.<br>
+Example 1:<br>
+Input: x = 123<br>
+Output: 321</p>
+<h2 id="First-try">First try</h2>
+<p>x % 10<br>
+didn’t have a solution</p>
+<h2 id="Refer-to-others’-solution">Refer to others’ solution</h2>
+<p>we can use number.toString()<br>
+array.split(“”)<br>
+array.reverse()<br>
+array.join(“”)</p>
+<p>Math.pow(2,n) represents 2[^n]<br>
+Math.abs()return absolute value</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number&#125;</span> <span class="variable">x</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;number&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> reverse = <span class="function"><span class="keyword">function</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> isNegtive = x&lt;<span class="number">0</span></span><br><span class="line">    <span class="keyword">const</span> strArray = <span class="built_in">Math</span>.abs(x).toString().split(<span class="string">&quot;&quot;</span>)</span><br><span class="line">    <span class="keyword">const</span> num = strArray.reverse().join(<span class="string">&quot;&quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> ((isNegtive &amp;&amp; (num&gt;<span class="built_in">Math</span>.pow(<span class="number">2</span>,<span class="number">31</span>))) || (!isNegtive &amp;&amp; (num&gt;<span class="built_in">Math</span>.pow(<span class="number">2</span>,<span class="number">31</span>)-<span class="number">1</span>)))&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(isNegtive)&#123;</span><br><span class="line">            <span class="keyword">return</span> -num;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">return</span> num;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>Runtime: 88 ms, faster than 74.47% of JavaScript online submissions for Reverse Integer.<br>
+Memory Usage: 40.3 MB, less than 70.81% of JavaScript online submissions for Reverse Integer.</p>
 
 
         <hr>
@@ -612,7 +625,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Reverse-Interger"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Reverse Interger</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#First-try"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">First try</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Refer-to-others%E2%80%99-solution"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">Refer to others’ solution</span></a></li></ol></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Reverse Interger</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#First-try"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">First try</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Refer-to-others%E2%80%99-solution"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">Refer to others’ solution</span></a></li></ol></li></ol>
         
         </div>
       </aside>

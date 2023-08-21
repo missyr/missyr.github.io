@@ -252,17 +252,6 @@
           
           
           <li>
-            <a href="/tags/">
-              
-              TAGS
-              
-              
-            </a>
-          </li>
-          
-          
-          
-          <li>
             <a href="/archive/">
               
               ARCHIVES
@@ -277,6 +266,17 @@
             <a href="/categories/">
               
               CATEGORIES
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/tags/">
+              
+              TAGS
               
               
             </a>
@@ -400,7 +400,7 @@
             </span>
             <div class="blank_box"></div>
             <span class="meta">
-              Words <span class="post-count">405</span> In Total
+              Words <span class="post-count">408</span> In Total
             </span>
             <div class="blank_box"></div>
             <!-- WordCount end -->
@@ -462,16 +462,24 @@
       <!-- Post Container -->
       <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-        <h1 id="Remove-Duplicates-from-Sorted-Array"><a href="#Remove-Duplicates-from-Sorted-Array" class="headerlink" title="Remove Duplicates from Sorted Array"></a>Remove Duplicates from Sorted Array</h1><p>Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.</p>
+        <h1>Remove Duplicates from Sorted Array</h1>
+<p>Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.</p>
 <p>Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the first part of the array nums. More formally, if there are k elements after removing the duplicates, then the first k elements of nums should hold the final result. It does not matter what you leave beyond the first k elements.</p>
 <p>Return k after placing the final result in the first k slots of nums.</p>
 <p>Do not allocate extra space for another array. You must do this by modifying the input array in-place with O(1) extra memory.</p>
 <p>Example 1:</p>
-<p>Input: nums = [1,1,2]<br>Output: 2, nums = [1,2,_]<br>Explanation: Your function should return k = 2, with the first two elements of nums being 1 and 2 respectively.<br>It does not matter what you leave beyond the returned k (hence they are underscores).</p>
-<h2 id="First-Try"><a href="#First-Try" class="headerlink" title="First Try"></a>First Try</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number[]&#125;</span> <span class="variable">nums</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;number&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> removeDuplicates = <span class="function"><span class="keyword">function</span>(<span class="params">nums</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> k = nums.length;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i=<span class="number">1</span>;i&lt;=k-<span class="number">1</span>;)&#123;</span><br><span class="line">        <span class="keyword">if</span> (nums[i]==nums[i-<span class="number">1</span>])&#123;</span><br><span class="line">            nums.splice(i,<span class="number">1</span>);</span><br><span class="line">            k= nums.length;</span><br><span class="line">            i--;   </span><br><span class="line">        &#125;</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>Runtime: 156 ms, faster than 22.39% of JavaScript online submissions for Remove Duplicates from Sorted Array.<br>Memory Usage: 42.3 MB, less than 11.73% of JavaScript online submissions for Remove Duplicates from Sorted Array.</p>
-<h2 id="Feedback-and-improve"><a href="#Feedback-and-improve" class="headerlink" title="Feedback and improve"></a>Feedback and improve</h2><p>When doing splice, it is an O(n) operation, and because it is in a for loop, it becomes O(n^2).so this solution doesn’t technically meet the requirements.</p>
-<p>Improve:<br>Set nums[0] as first output element, go throgh the next compared to nums[0], move the first element that is different with nums[0] to nums[1], then go through next compared to nums[1] untill we find the next “chosen” nums[2]…</p>
+<p>Input: nums = [1,1,2]<br>
+Output: 2, nums = [1,2,_]<br>
+Explanation: Your function should return k = 2, with the first two elements of nums being 1 and 2 respectively.<br>
+It does not matter what you leave beyond the returned k (hence they are underscores).</p>
+<h2 id="First-Try">First Try</h2>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number[]&#125;</span> <span class="variable">nums</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;number&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> removeDuplicates = <span class="function"><span class="keyword">function</span>(<span class="params">nums</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> k = nums.length;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i=<span class="number">1</span>;i&lt;=k-<span class="number">1</span>;)&#123;</span><br><span class="line">        <span class="keyword">if</span> (nums[i]==nums[i-<span class="number">1</span>])&#123;</span><br><span class="line">            nums.splice(i,<span class="number">1</span>);</span><br><span class="line">            k= nums.length;</span><br><span class="line">            i--;   </span><br><span class="line">        &#125;</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>Runtime: 156 ms, faster than 22.39% of JavaScript online submissions for Remove Duplicates from Sorted Array.<br>
+Memory Usage: 42.3 MB, less than 11.73% of JavaScript online submissions for Remove Duplicates from Sorted Array.</p>
+<h2 id="Feedback-and-improve">Feedback and improve</h2>
+<p>When doing splice, it is an O(n) operation, and because it is in a for loop, it becomes O(n^2).so this solution doesn’t technically meet the requirements.</p>
+<p>Improve:<br>
+Set nums[0] as first output element, go throgh the next compared to nums[0], move the first element that is different with nums[0] to nums[1], then go through next compared to nums[1] untill we find the next “chosen” nums[2]…</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> removeDuplicates = <span class="function"><span class="keyword">function</span>(<span class="params">nums</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(nums.length === <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> result = <span class="number">1</span>, i = <span class="number">0</span>, j = <span class="number">1</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span>(i &lt; nums.length &amp;&amp; j &lt; nums.length) &#123;</span><br><span class="line">        <span class="keyword">if</span>(nums[j] === nums[i]) &#123;</span><br><span class="line">            j++;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            result += <span class="number">1</span>;</span><br><span class="line">            i++;</span><br><span class="line">            nums[i] = nums[j];</span><br><span class="line">            j++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
         <hr>
@@ -621,7 +629,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Remove-Duplicates-from-Sorted-Array"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Remove Duplicates from Sorted Array</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#First-Try"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">First Try</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Feedback-and-improve"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">Feedback and improve</span></a></li></ol></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Remove Duplicates from Sorted Array</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#First-Try"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">First Try</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Feedback-and-improve"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">Feedback and improve</span></a></li></ol></li></ol>
         
         </div>
       </aside>

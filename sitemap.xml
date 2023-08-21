@@ -4,7 +4,7 @@
   <url>
     <loc>http://missyr.github.io/categories/index.html</loc>
     
-    <lastmod>2023-08-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     
   </url>
   
@@ -33,13 +33,6 @@
     <loc>http://missyr.github.io/Poem/Taken/</loc>
     
     <lastmod>2022-02-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://missyr.github.io/Poem/old/</loc>
-    
-    <lastmod>2022-01-16</lastmod>
     
   </url>
   
@@ -116,7 +109,7 @@
 
   <url>
     <loc>http://missyr.github.io/</loc>
-    <lastmod>2023-08-09</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -124,21 +117,21 @@
   
   <url>
     <loc>http://missyr.github.io/tags/JavaScript/</loc>
-    <lastmod>2023-08-09</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://missyr.github.io/tags/Leetcode/</loc>
-    <lastmod>2023-08-09</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://missyr.github.io/tags/Poem/</loc>
-    <lastmod>2023-08-09</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -147,21 +140,21 @@
   
   <url>
     <loc>http://missyr.github.io/categories/JavaScript/</loc>
-    <lastmod>2023-08-09</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://missyr.github.io/categories/Leetcode/</loc>
-    <lastmod>2023-08-09</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://missyr.github.io/categories/Poem/</loc>
-    <lastmod>2023-08-09</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

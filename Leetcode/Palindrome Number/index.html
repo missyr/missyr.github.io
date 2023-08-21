@@ -252,17 +252,6 @@
           
           
           <li>
-            <a href="/tags/">
-              
-              TAGS
-              
-              
-            </a>
-          </li>
-          
-          
-          
-          <li>
             <a href="/archive/">
               
               ARCHIVES
@@ -277,6 +266,17 @@
             <a href="/categories/">
               
               CATEGORIES
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/tags/">
+              
+              TAGS
               
               
             </a>
@@ -400,7 +400,7 @@
             </span>
             <div class="blank_box"></div>
             <span class="meta">
-              Words <span class="post-count">135</span> In Total
+              Words <span class="post-count">138</span> In Total
             </span>
             <div class="blank_box"></div>
             <!-- WordCount end -->
@@ -462,13 +462,17 @@
       <!-- Post Container -->
       <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-        <h1 id="Palindrome-Number"><a href="#Palindrome-Number" class="headerlink" title="Palindrome Number"></a>Palindrome Number</h1><p>Given an integer x, return true if x is palindrome integer.</p>
+        <h1>Palindrome Number</h1>
+<p>Given an integer x, return true if x is palindrome integer.</p>
 <p>An integer is a palindrome when it reads the same backward as forward. For example, 121 is palindrome while 123 is not.</p>
 <p>Example 1:</p>
-<p>Input: x = 121<br>Output: true</p>
-<h2 id="First-Try"><a href="#First-Try" class="headerlink" title="First Try"></a>First Try</h2><p>the same as Reverse Interger, use number.toString().split(‘’).reverse().join(‘’)</p>
+<p>Input: x = 121<br>
+Output: true</p>
+<h2 id="First-Try">First Try</h2>
+<p>the same as Reverse Interger, use number.toString().split(‘’).reverse().join(‘’)</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number&#125;</span> <span class="variable">x</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;boolean&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> isPalindrome = <span class="function"><span class="keyword">function</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (x&lt;<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">let</span> oriString = x.toString();</span><br><span class="line">        <span class="keyword">let</span> revString = oriString.split(<span class="string">&#x27;&#x27;</span>).reverse().join(<span class="string">&#x27;&#x27;</span>);</span><br><span class="line">        <span class="keyword">if</span> (oriString == revString)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>Runtime: 208 ms, faster than 35.50% of JavaScript online submissions for Palindrome Number.<br>Memory Usage: 48.4 MB, less than 47.41% of JavaScript online submissions for Palindrome Number.</p>
+<p>Runtime: 208 ms, faster than 35.50% of JavaScript online submissions for Palindrome Number.<br>
+Memory Usage: 48.4 MB, less than 47.41% of JavaScript online submissions for Palindrome Number.</p>
 
 
         <hr>
@@ -618,7 +622,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Palindrome-Number"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Palindrome Number</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#First-Try"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">First Try</span></a></li></ol></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Palindrome Number</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#First-Try"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">First Try</span></a></li></ol></li></ol>
         
         </div>
       </aside>
